@@ -3,6 +3,7 @@ is aimed to provide a code for tracklet files generation for classification-and-
 This code is tested on a small piece of video from the movie The One Flew Over the Cuckoo's Nest.
 
 *Usage*
+
 To replicate the results, please follow the instructions below:
 
 Generate the output dictionary for deepSORT and save it as a pickle file using the Faster R-CNN output/cuckoo's_nest.ipynb script
