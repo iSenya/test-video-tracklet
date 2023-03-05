@@ -20,9 +20,9 @@ max_miss = 60
 
 
 all_frames_path = None
-proposal_result_path = "MEGA/mega_boxfeatures/VidORval_freq1.pkl"   # original frame-level proposal results   
+proposal_result_path = "/Users/senyaisavnina/Downloads/output.pkl"   # the dictrionary produced by Faster R-CNN  
 
-save_dir = "deepSORT/tracking_results/VidORval_freq1_m{}s{:.1f}/".format(max_miss,min_confidence)  
+save_dir = "/Users/senyaisavnina/Downloads/"
 
 if not os.path.isdir(save_dir):
     os.makedirs(save_dir)
@@ -44,10 +44,10 @@ for video_name in tqdm(video_name_list):
     for frame_id, proposals in enumerate(proposals_list):
         assert video_name == proposals["video_name"]
         assert frame_id == proposals["frame_id"], "frame_id:{} != {}".format(frame_id,proposals["frame_id"])
-        bboxes = proposals["bboxes"]                # refer to  `MEGA/mega_boxfeatures/cvt_proposal_result.py`
+        bboxes = proposals["bboxes"]              
         roifeats = proposals["roifeats"]
-        scores = proposals["scores"].tolist()
-        labels = proposals["labels"].tolist()
+        scores = proposals["scores"]
+        labels = proposals["labels"]
         width,height = proposals["width_height"]
         
         for i, bbox in enumerate(bboxes):
