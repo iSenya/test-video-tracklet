@@ -14,7 +14,7 @@ Copy your *.npy file to the ~/VidSGG-BIG/tracking_results/[your folder] director
 
 Run the BIG model on the tracklet using the infer_nest.py script from the BIG repository, indicating the path to your config and checkpoint files, as well as the CUDA device you want to use. 
 Example:
-python tools/infer_nest.py --cfg_path experiments/nest/config_.py --ckpt_path experiments/nest/model_epoch_80.pth --cuda 0
+> python tools/infer_nest.py --cfg_path experiments/nest/config_.py --ckpt_path experiments/nest/model_epoch_80.pth --cuda 0
 
 This will generate a [JSON file](https://drive.google.com/file/d/1g1tduZJ5_y-15ALT-NVn3WTSuNAlfzUm/view?usp=sharing) with the classification and grounding results.
 
