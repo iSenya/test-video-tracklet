@@ -7,7 +7,7 @@ This code is tested on a small piece of [ video  ](https://drive.google.com/file
 To replicate the results, please follow the instructions below:
 
 Generate the output dictionary for deepSORT and save it as a pickle file using the Faster R-CNN output/cuckoo's_nest.ipynb script.
-The example of the output format is [here].(https://drive.google.com/file/d/1-4PufkhbU7xAAZTpG28UIxQhUTbS0LI5/view?usp=sharing)
+The example of the output format is [here](https://drive.google.com/file/d/1-4PufkhbU7xAAZTpG28UIxQhUTbS0LI5/view?usp=sharing).
 
 Run the deepSORT_tracking_v2.py file, indicating the path to your output dictionary. This will generate a new *.npy file, which represents the tracklet. In our case the example is [here](https://drive.google.com/file/d/1FZmZW-F6_O2_PBqF3RL81qu6IFyNLU_Z/view?usp=sharing).
 Copy your *.npy file to the ~/VidSGG-BIG/tracking_results/[your folder] directory.
