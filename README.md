@@ -1,5 +1,6 @@
 This project is an extention of the work done by Mr. Kaifeng Gao et al. https://github.com/Dawn-LX
 is aimed to provide a code for tracklet files generation for classification-and-grounding approach for object detection, tracking, and grounding in video streams. We used Faster R-CNN for classification, modification of deepSORT algorithm for multiple object tracking (MOT), BIG model for generating bipartite graphs, and grounding the detected objects and their relationships between each other on the timestamp of the video.
+Faster R-CNN is trained on the COCO dataset with 80 classes. BIG model is trained on 36 classes of VidVRD dataset. First, we did the mapping of classes in our code, then generated the tracklet file.
 This code is tested on a small piece of [ video  ](https://drive.google.com/file/d/1z6W9TOnjFAdkNhM52cYXATypJMK5T_0h/view?usp=sharing)from the movie The One Flew Over the Cuckoo's Nest.
 
 <h2>Usage</h2>
