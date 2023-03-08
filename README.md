@@ -11,9 +11,9 @@ Generate the output dictionary for deepSORT and save it as a pickle file using t
 The example of the output format is [here](https://drive.google.com/file/d/1-4PufkhbU7xAAZTpG28UIxQhUTbS0LI5/view?usp=sharing).
 
 Run the deepSORT_tracking_v2.py file, indicating the path to your output dictionary. This will generate a new *.npy file, which represents the tracklet. In our case the example is [here](https://drive.google.com/file/d/1FZmZW-F6_O2_PBqF3RL81qu6IFyNLU_Z/view?usp=sharing).
-Copy your *.npy file to the ~/VidSGG-BIG/tracking_results/[your folder] directory.
+Copy your *.npy file to the https://github.com/iSenya/BIG-cuckoos-nest/tree/main/tracking_results/nest directory.
 
-Run the BIG model on the tracklet using the infer_nest.py script from the BIG repository, indicating the path to your config and checkpoint files, as well as the CUDA device you want to use. 
+Run the BIG model on the tracklet using the infer_nest.py script from the [BIG repository](https://github.com/iSenya/BIG-cuckoos-nest/blob/main/tools/infer_nest.py), indicating the path to your config and checkpoint files, as well as the CUDA device you want to use. 
 Example:
 > python tools/infer_nest.py --cfg_path experiments/nest/config_.py --ckpt_path experiments/nest/model_epoch_80.pth --cuda 0
 
